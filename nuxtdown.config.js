@@ -9,12 +9,12 @@ module.exports = {
     };
   },
   content: [
-    [
-      "pages",
+    [ "blog",
       {
-        page: "/page/_page",
-        permalink: "/:slug",
-        isPost: false
+        page: "/blog/_blogpost",
+        permalink: "blog/:slug",
+        //data: TODO:
+        isPost: true
       }
     ]
   ]
