@@ -28,7 +28,12 @@ module.exports = {
       {
         hid: "description",
         name: "description",
-        content: ""
+        content: "Landing page with blog for IsraelMuCa"
+      },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content: "Full Stack full-stack node.js nodejs vue nuxt landing blog javascript jamstack"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
