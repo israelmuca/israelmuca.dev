@@ -1,5 +1,0 @@
-language: node_js
-cache: npm
-
-script:
-  - npm run ci:test # Generate test project

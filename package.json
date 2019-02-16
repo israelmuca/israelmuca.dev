@@ -1,36 +1,31 @@
 {
-  "name": "nuxt-netlify-cms-starter-template",
-  "version": "2.0.0",
-  "description": "Build server-less, static websites with Vue.js and Netlify CMS.",
-  "main": "meta.js",
+  "name": "IsraelMuCa",
+  "version": "1.0.0",
+  "description": "A blog",
+  "author": "IsraelMuCa",
   "private": true,
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "ci:test": "node generate-test.js && cd test && npm install && npm run generate",
-    "vue-cli:init": "rm -rf test && vue init . test"
+    "dev": "nuxt",
+    "serve": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "generate:manual": "cross-env BASE_URL=https://myproductiondomain.tld nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/renestalder/nuxt-netlify-cms-starter-template.git"
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.1",
+    "nuxt": "~2.2.0",
+    "nuxtdown": "^2.0.3"
   },
-  "keywords": [
-    "nuxt",
-    "vuejs",
-    "netlify",
-    "serverless",
-    "jamstack"
-  ],
-  "author": "René Stalder <renestalder@protonmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/renestalder/nuxt-netlify-cms-starter-template/issues"
-  },
-  "homepage": "https://github.com/renestalder/nuxt-netlify-cms-starter-template#readme",
   "devDependencies": {
-    "@vue/cli": "^3.2.3",
-    "@vue/cli-init": "^3.2.0",
-    "suppose": "^0.6.2"
+    "babel-eslint": "^8.2.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "glob": "^7.1.2"
   }
 }
