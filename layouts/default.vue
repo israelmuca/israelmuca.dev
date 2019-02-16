@@ -3,10 +3,10 @@
     <nav>
       <ul>
         <li>
-          <nuxt-link :to="'/page-1'">Page 1</nuxt-link>
+          <nuxt-link class="button--green" :to="'/page-1'">Page 1</nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="'/page-2'">Page 2</nuxt-link>
+          <nuxt-link class="button--grey" :to="'/page-2'">Page 2</nuxt-link>
         </li>
       </ul>
     </nav>

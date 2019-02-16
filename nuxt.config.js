@@ -23,6 +23,13 @@ module.exports = {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   /*
+  ** Global CSS framework
+  */
+  css: [
+    { src: 'bulma/bulma.sass', lang: 'sass' },
+    { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
+  ],
+  /*
   ** Customize the progress bar color
   */
   loading: { color: "#FFBB43" },
