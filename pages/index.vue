@@ -15,10 +15,10 @@
 
   <nav class="level">
     <p class="level-item">
-      <a href="https://www.github.com/IsraelMuCa" target="_blank" rel="noopener noreferrer"><fab :icon="fab.faGithub" /></a>
+      <a href="https://www.github.com/IsraelMuCa" target="_blank" rel="noopener noreferrer" aria-label="Githubs"><fab :icon="fab.faGithub" /></a>
     </p>
     <p class="level-item">
-      <a href="https://www.twitter.com/IsraelMuCa" target="_blank" rel="noopener noreferrer"><fab :icon="fab.faTwitter" /></a>
+      <a href="https://www.twitter.com/IsraelMuCa" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><fab :icon="fab.faTwitter" /></a>
     </p>
   </nav>
 </div>

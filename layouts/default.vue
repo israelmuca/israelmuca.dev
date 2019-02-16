@@ -5,7 +5,7 @@
         <a href="#" class="link is-info">Blog</a>
       </p>
       <p class="level-item has-text-centered">
-        <a href="/"><img src="~/static/images/logo.png" alt="home"></a>
+        <a href="/" aria-label="Home"><img src="~/static/images/logo.png" alt="home"></a>
       </p>
       <p class="level-item has-text-centered">
         <a href="#" class="link is-info">CV</a>
