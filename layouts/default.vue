@@ -2,13 +2,13 @@
   <div>
     <nav class="level">
       <p class="level-item has-text-centered">
-        <a href="#" class="link is-info">Blog</a>
+        <a href="#" aria-label="Blog" class="link is-info">Blog</a>
       </p>
       <p class="level-item has-text-centered">
         <a href="/" aria-label="Home"><img src="~/static/images/logo.png" alt="home"></a>
       </p>
       <p class="level-item has-text-centered">
-        <a href="#" class="link is-info">CV</a>
+        <a href="#" aria-label="CV" class="link is-info">CV</a>
       </p>
     </nav>
     <!-- <nav>
