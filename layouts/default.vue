@@ -32,11 +32,13 @@
 @import "bulma/sass/components/level.sass"
 
 img
-  height: 50px
+  height: 4rem
 
 nav
-  padding-top: 10px
+  margin-top: 2rem
 
 a
   font-size: 1.5rem
+  color: black
+  text-decoration: none
 </style>

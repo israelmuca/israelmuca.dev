@@ -1,5 +1,16 @@
 module.exports = {
-  modules: ["nuxtdown"],
+  modules: [
+    "nuxtdown",
+    ['nuxt-fontawesome', {
+      component: 'fab',
+      imports: [
+        {
+          set: '@fortawesome/free-brands-svg-icons',
+          icons: ['faGithub', 'faTwitter']
+        }
+      ]
+    }]
+  ],
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
   },
@@ -10,14 +21,14 @@ module.exports = {
     htmlAttrs: {
       lang: 'en',
     },
-    title: "My Website",
+    title: "IsraelMuCa",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Welcome to my website."
+        content: ""
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
@@ -26,8 +37,7 @@ module.exports = {
   ** Global CSS framework
   */
   css: [
-    { src: 'bulma/bulma.sass', lang: 'sass' },
-    { src: 'font-awesome/scss/font-awesome.scss', lang: 'scss' }
+    // { src: 'bulma/bulma.sass', lang: 'sass' }
   ],
   /*
   ** Customize the progress bar color
