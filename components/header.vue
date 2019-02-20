@@ -109,10 +109,10 @@ export default {
   line-height: 16px;
 }
 
-.hero-body {
+/* .hero-body {
   padding-left: 15%;
   padding-right: 15%;
-}
+} */
 
 .hero-foot {
   padding-bottom: 50px;
