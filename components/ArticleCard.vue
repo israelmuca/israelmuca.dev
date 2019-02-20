@@ -41,6 +41,7 @@
   font-family: "Eczar";
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 0 !important;
 }
 
 .art-extract {
