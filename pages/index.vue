@@ -1,11 +1,16 @@
 <template>
-  <header></header>
+  <Header>
+    <h1 class="title">Hello! I'm Israel Muñoz, a Full Stack Web Developer. I'm currently working in expanding access to computer science in mexican schools.</h1>
+  </Header>
 </template>
 
 <script>
-const Header = () => import("~/components/header");
+import Header from '~~/components/header.vue'
 
 export default {
+  components: {
+    Header
+  },
   head() {
     return {
       meta: [
@@ -27,5 +32,12 @@ export default {
 </script>
 
 
-<style lang="css" scoped>
+<style scoped>
+h1 {
+	color: #FFFFFF;
+  font-family: "Eczar";
+  font-weight: 500;
+	font-size: 48px;
+	line-height: 64px;
+}
 </style>

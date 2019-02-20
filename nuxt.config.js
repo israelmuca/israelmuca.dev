@@ -24,26 +24,19 @@ module.exports = {
     title: "IsraelMuCa",
     meta: [
       { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: "Landing page with blog for IsraelMuCa"
-      },
-      {
-        hid: "keywords",
-        name: "keywords",
-        content: "Full Stack full-stack node.js nodejs vue nuxt landing blog javascript jamstack"
-      }
+      { name: "viewport", content: "width=device-width, initial-scale=1" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    link: [{ rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Eczar:500|Work+Sans:400,500" }],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Eczar:400,500|Work+Sans:400,500" }
+    ],
   },
   /*
   ** Global CSS framework
   */
   css: [
-    { src: 'bulma/css/bulma.css', lang: 'css' }
+    { src: 'bulma/css/bulma.css', lang: 'css' },
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
   /*
   ** Customize the progress bar color
