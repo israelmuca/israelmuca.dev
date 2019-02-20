@@ -36,7 +36,8 @@ module.exports = {
         content: "Full Stack full-stack node.js nodejs vue nuxt landing blog javascript jamstack"
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Eczar:500|Work+Sans:400,500" }],
   },
   /*
   ** Global CSS framework
