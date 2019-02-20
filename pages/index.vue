@@ -1,15 +1,23 @@
 <template>
+<div>
   <Header>
     <h1 class="title">Hello! I'm Israel Muñoz, a Full Stack Web Developer. I'm currently working in expanding access to computer science in mexican schools.</h1>
   </Header>
+  <div class="container">
+    <ArticleCard></ArticleCard>
+  <ArticleCard></ArticleCard>
+  </div>
+</div>
 </template>
 
 <script>
-import Header from '~~/components/header.vue'
+import Header from '~~/components/Header.vue'
+import ArticleCard from '~~/components/ArticleCard.vue'
 
 export default {
   components: {
-    Header
+    Header,
+    ArticleCard
   },
   head() {
     return {
@@ -39,5 +47,12 @@ h1 {
   font-weight: 500;
 	font-size: 48px;
 	line-height: 64px;
+}
+
+.container{
+  padding-top: 77px;
+}
+.container:last-child {
+  padding-bottom: 77px;
 }
 </style>
