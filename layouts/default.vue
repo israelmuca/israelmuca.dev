@@ -25,20 +25,20 @@
   </div>
 </template>
 
-<style lang="sass" scoped>
-@import "bulma/sass/utilities/initial-variables.sass"
-@import "bulma/sass/utilities/derived-variables.sass"
-@import "bulma/sass/utilities/mixins.sass"
-@import "bulma/sass/components/level.sass"
+<style lang="css" scoped>
 
-img
-  height: 4rem
+img {
+  height: 4rem;
+}
 
-nav
-  margin-top: 2rem
+nav {
+  margin-top: 2rem;
+}
 
-a
-  font-size: 1.5rem
-  color: black
-  text-decoration: none
+a { 
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+
 </style>

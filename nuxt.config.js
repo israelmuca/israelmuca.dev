@@ -42,7 +42,7 @@ module.exports = {
   ** Global CSS framework
   */
   css: [
-    // { src: 'bulma/bulma.sass', lang: 'sass' }
+    { src: 'bulma/css/bulma.css', lang: 'css' }
   ],
   /*
   ** Customize the progress bar color

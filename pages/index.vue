@@ -38,19 +38,15 @@ export default {
 </script>
 
 
-<style lang="sass" scoped>
-@import "bulma/sass/utilities/initial-variables.sass"
-@import "bulma/sass/utilities/derived-variables.sass"
-@import "bulma/sass/utilities/mixins.sass"
-@import "bulma/sass/components/level.sass"
-@import "bulma/sass/utilities/_all.sass"
-@import "bulma/sass/grid/columns.sass"
+<style lang="css" scoped>
 
-.columns
-  margin-top: 4rem
+.columns {
+  margin-top: 4rem;
+}
 
-a
-  font-size: 2rem
-  color: black
-  text-decoration: none
+a {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+}
 </style>
