@@ -1,6 +1,6 @@
 # dependencies
 node_modules
-netlify.toml
+
 # logs
 npm-debug.log
 
