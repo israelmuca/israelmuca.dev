@@ -1,29 +1,35 @@
 <template>
-    <article class="media">
-      <figure class="media-left">
-        <figure class="image">
-          <img src="~/static/images/assets/pexels-photo-346885.jpeg">
-        </figure>
+  <article class="media">
+    <figure class="media-left">
+      <figure class="image">
+        <img src="https://bulma.io/images/placeholders/640x480.png">
       </figure>
+    </figure>
 
-      <div class="media-content">
-        <div class="content">
-          <p class="art-tag">ARTICLE</p>
-          <br>
-          <p class="art-title">Title of the article</p>
-          <br>
-          <p
-            class="art-extract"
-          >"Article extract... Do irure esse ullamco fugiat ad esse laborum excepteur. Veniam ex amet sunt officia culpa eiusmod reprehenderit labore sint. Nostrud cupidatat est nulla qui est occaecat cillum id adipisicing..."</p>
-          <a class="button is-black is-medium">
-            <span class="button-text">Read More</span>
-          </a>
-        </div>
+    <div class="media-content">
+      <div class="content">
+        <p class="art-tag">ARTICLE</p>
+        <br>
+        <p class="art-title">Title of the article</p>
+        <br>
+        <p class="art-extract">"Article extract... Do irure esse ullamco fugiat ad esse laborum excepteur. Veniam ex amet sunt officia culpa eiusmod reprehenderit labore sint. Nostrud cupidatat est nulla qui est occaecat cillum id adipisicing..."</p>
+        <a class="button is-black is-medium">
+          <span class="button-text">Read More</span>
+        </a>
       </div>
-    </article>
+    </div>
+  </article>
 </template>
 
 <style scoped>
+
+article {
+  border-top-width: 0px !important;
+}
+
+.media-left {
+  max-width: 50%;
+}
 
 .art-tag {
   color: #ff445b;

@@ -5,19 +5,22 @@
   </Header>
   <div class="container">
     <ArticleCard></ArticleCard>
-  <ArticleCard></ArticleCard>
+    <ArticleCard></ArticleCard>
   </div>
+  <Footer></Footer>
 </div>
 </template>
 
 <script>
 import Header from '~~/components/Header.vue'
 import ArticleCard from '~~/components/ArticleCard.vue'
+import Footer from '~~/components/Footer.vue'
 
 export default {
   components: {
     Header,
-    ArticleCard
+    ArticleCard,
+    Footer
   },
   head() {
     return {

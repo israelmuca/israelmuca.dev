@@ -109,14 +109,10 @@ export default {
   line-height: 16px;
 }
 
-/* .hero-body {
-  padding-left: 15%;
-  padding-right: 15%;
-} */
-
 .hero-foot {
   padding-bottom: 50px;
 }
+
 .svg-inline--fa {
   height: 2em;
   width: 2em;
