@@ -1,20 +1,22 @@
 <template>
-<div>
-  <Header>
-    <h1 class="title">Hello! I'm Israel Muñoz, a Full Stack Web Developer. I'm currently working in expanding access to computer science in mexican schools.</h1>
-  </Header>
-  <div class="container">
-    <ArticleCard></ArticleCard>
-    <ArticleCard></ArticleCard>
+  <div>
+    <Header>
+      <h1
+        class="title"
+      >Hello! I'm Israel Muñoz, a Full Stack Web Developer. I'm currently working in expanding access to computer science in mexican schools.</h1>
+    </Header>
+    <div class="container">
+      <ArticleCard></ArticleCard>
+      <ArticleCard></ArticleCard>
+    </div>
+    <Footer></Footer>
   </div>
-  <Footer></Footer>
-</div>
 </template>
 
 <script>
-import Header from '~~/components/Header'
-import ArticleCard from '~~/components/ArticleCard'
-import Footer from '~~/components/Footer'
+const Header = () => import("~/components/Header")
+const ArticleCard = () => import("~/components/ArticleCard")
+const Footer = () => import('~/components/Footer')
 
 export default {
   components: {
@@ -45,14 +47,14 @@ export default {
 
 <style scoped>
 h1 {
-	color: #FFFFFF;
+  color: #ffffff;
   font-family: "Eczar";
   font-weight: 500;
-	font-size: 48px;
-	line-height: 64px;
+  font-size: 48px;
+  line-height: 64px;
 }
 
-.container{
+.container {
   padding-top: 77px;
 }
 .container:last-child {
