@@ -100,6 +100,10 @@ export default {
   line-height: 21px;
 }
 
+.navbar-item:hover {
+  background-color: transparent;
+}
+
 .header-link {
   height: 16px;
   width: 67px;
@@ -107,6 +111,10 @@ export default {
   font-family: "Work Sans";
   font-size: 14px;
   line-height: 16px;
+}
+
+.header-link:hover {
+  color: #ff445b;
 }
 
 .hero-foot {

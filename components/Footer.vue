@@ -17,7 +17,8 @@
               href="https://www.github.com/IsraelMuCa"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Githubs"
+              aria-label="Github"
+              class="external-link"
             >
               <span class="fab">
                 <fab :icon="fab.faGithub"/>
@@ -31,6 +32,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
+              class="external-link"
             >
               <fab :icon="fab.faTwitter"/>
             </a>
@@ -114,5 +116,9 @@ footer {
   font-family: "Work Sans";
   font-size: 14px;
   line-height: 16px;
+}
+
+.svg-inline--fa:hover {
+    color: #3273dc;
 }
 </style>

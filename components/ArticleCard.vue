@@ -73,4 +73,8 @@ article {
   letter-spacing: 2.47px;
   line-height: 16px;
 }
+
+.button-text:hover {
+  color: #ff445b;
+}
 </style>
