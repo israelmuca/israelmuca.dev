@@ -2,7 +2,7 @@
   <article class="media">
     <figure class="media-left">
       <figure class="image">
-        <img src="https://bulma.io/images/placeholders/640x480.png">
+        <img src="~~/static/images/assets/random.jpeg">
       </figure>
     </figure>
 
