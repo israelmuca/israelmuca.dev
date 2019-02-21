@@ -63,18 +63,17 @@ article {
   border-radius: 0;
 }
 
+.button:hover {
+  color: #ff445b;
+}
+
 .button-text {
   height: 16px;
   width: 106px;
-  color: #ffffff;
   font-family: "Work Sans";
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2.47px;
   line-height: 16px;
-}
-
-.button-text:hover {
-  color: #ff445b;
 }
 </style>

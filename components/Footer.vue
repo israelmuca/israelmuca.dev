@@ -49,7 +49,7 @@
           </div>
         </div>
         <!-- Right side -->
-        <div class="level-right">
+        <!-- <div class="level-right">
           <a href="#" class="level-item">
             <span class="footer-link">BLOG</span>
           </a>
@@ -59,7 +59,7 @@
           <a href="#" class="level-item">
             <span class="footer-link">CONTACT</span>
           </a>
-        </div>
+        </div> -->
       </nav>
     </div>
   </footer>

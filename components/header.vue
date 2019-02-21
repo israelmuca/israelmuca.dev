@@ -17,13 +17,16 @@
           <div id="navbarMenuHero" class="navbar-menu">
             <div class="navbar-end">
               <a href="#" class="navbar-item">
+                <span class="header-link">BLOG</span>
+              </a>
+<!--               <a class="navbar-item button is-black">
                 <span class="header-link">Blog</span>
+              </a> -->
+              <a href="#" class="navbar-item">
+                <span class="header-link">ABOUT</span>
               </a>
               <a href="#" class="navbar-item">
-                <span class="header-link">About</span>
-              </a>
-              <a href="#" class="navbar-item">
-                <span class="header-link">Contact</span>
+                <span class="header-link">CONTACT</span>
               </a>
             </div>
           </div>
@@ -102,6 +105,7 @@ export default {
 
 .navbar-item:hover {
   background-color: transparent;
+  color: #3273dc;
 }
 
 .header-link {
