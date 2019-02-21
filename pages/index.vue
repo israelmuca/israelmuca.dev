@@ -14,9 +14,9 @@
 </template>
 
 <script>
-const Header = () => import("../components/Header")
-const ArticleCard = () => import("../components/ArticleCard")
-const Footer = () => import('../components/Footer')
+import Header from '~~/components/Header'
+import ArticleCard from '~~/components/ArticleCard'
+import Footer from '~~/components/Footer'
 
 export default {
   components: {
