@@ -18,4 +18,5 @@ collections:
       - {label: SEO, name: description, widget: text, required: true, pattern: ['.{50,300}', "Must be within 50 and 300 chars"]}
       - {label: Keywords, name: keywords, widget: list}
       - {label: Publish date, name: date, widget: datetime}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: true}
       - {label: Body, name: body, widget: markdown}
