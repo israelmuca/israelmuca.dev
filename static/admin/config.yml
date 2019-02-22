@@ -16,7 +16,7 @@ collections:
       - {label: Title, name: title, widget: string, required: true}
       - {label: Summary, name: summary, widget: text, required: true, pattern: ['.{180,220}', "Must be within 180 and 220 characters"]}
       - {label: SEO, name: description, widget: text, required: true, pattern: ['.{50,300}', "Must be within 50 and 300 chars"]}
-      - {label: Keywords, name: keywords, widget: list}
+      - {label: Keywords, name: keywords, widget: text}
       - {label: Publish date, name: date, widget: datetime}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: true}
       - {label: Body, name: body, widget: markdown}
