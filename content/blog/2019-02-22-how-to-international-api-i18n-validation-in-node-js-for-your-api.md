@@ -15,6 +15,7 @@ keywords:
     node.js backend express i18n polyglot internationalization translation
     tutorial es6 babel express-validator
 date: '2019-02-22T11:43:30-06:00'
+thumbnail: /images/uploads/i18n.jpeg
 ---
 So a while back, I was working on an API for a customer who had an [i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization) requirement. Alongside other requests, they needed their API to validate incoming user data, and depending on that data, return the specific success or error messages in the user’s provided language.
 
