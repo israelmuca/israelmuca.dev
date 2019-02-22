@@ -42,20 +42,34 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .title {
-	color: #FFFFFF;
-	font-family: "Eczar";
+  color: #ffffff;
+  font-family: "Eczar";
   font-weight: 500;
-	font-size: 48px;
-	line-height: 64px;
+  font-size: 48px;
+  line-height: 64px;
 }
 
 .subtitle {
-	color: #FFFFFF;
-	font-family: "Work Sans";
-	font-size: 21px;
-	letter-spacing: -0.88px;
-	line-height: 35px;
+  color: #ffffff;
+  font-family: "Work Sans";
+  font-size: 21px;
+  letter-spacing: -0.88px;
+  line-height: 35px;
 }
+
+/* .body p {
+  color: #000000;
+  font-family: "Work Sans";
+  font-size: 21px;
+  letter-spacing: -0.88px;
+  line-height: 37px;
+}
+
+div h2 {
+  color: #000000;
+  font-family: "Work Sans";
+  font-size: 28px;
+} */
 </style>

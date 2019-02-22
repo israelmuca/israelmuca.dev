@@ -36,7 +36,8 @@ module.exports = {
   */
   css: [
     { src: 'bulma/css/bulma.css', lang: 'css' },
-    '@fortawesome/fontawesome-svg-core/styles.css'
+    '@fortawesome/fontawesome-svg-core/styles.css',
+    'prismjs/themes/prism-okaidia.css'
   ],
   /*
   ** Customize the progress bar color
