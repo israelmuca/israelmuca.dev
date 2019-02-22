@@ -60,6 +60,20 @@ export default {
   line-height: 35px;
 }
 
+.number {
+  display: inline;
+  padding: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  vertical-align: inherit;
+  border-radius: inherit;
+  font-weight: inherit;
+  white-space: inherit;
+  background: inherit;
+  margin: inherit;
+}
+
 /* .body p {
   color: #000000;
   font-family: "Work Sans";
