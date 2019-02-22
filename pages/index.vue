@@ -14,9 +14,9 @@
 </template>
 
 <script>
-import Header from '~~/components/header.vue'
-import ArticleCard from '~~/components/articleCard.vue'
-import Footer from '~~/components/footer.vue'
+import Header from "~~/components/header.vue";
+import ArticleCard from "~~/components/articleCard.vue";
+import Footer from "~~/components/footer.vue";
 
 export default {
   components: {
