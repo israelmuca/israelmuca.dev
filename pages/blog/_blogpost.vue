@@ -12,6 +12,7 @@
 
 <script>
 import Header from "~~/components/header.vue";
+import Prism from 'prismjs'
 
 export default {
   components: {
