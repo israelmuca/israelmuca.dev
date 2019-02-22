@@ -78,6 +78,15 @@ export default {
   margin-bottom: 20px;
 }
 
+.description-text {
+  color: #000000;
+  font-family: "Work Sans";
+  font-size: 25px;
+  letter-spacing: -0.88px;
+  line-height: 37px;
+  margin-bottom: 10px;
+}
+
 hr {
   border: 1px solid #E2E5ED;
   margin-top: 50px;
@@ -104,6 +113,29 @@ a {
 a:hover {
   color: #ff445b;
   text-decoration: underline;
+}
+
+blockquote > p {
+  display: inherit;
+  padding: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  vertical-align: inherit;
+  border-radius: inherit;
+  font-weight: inherit;
+  white-space: inherit;
+  background: inherit;
+  margin: inherit;
+  margin-block-start: inherit;
+  margin-block-end: inherit;
+  margin-inline-start: inherit;
+  margin-inline-end: inherit;
+  font-family: inherit;
+}
+
+blockquote {
+  margin-bottom: 10px;
 }
 
 p {
