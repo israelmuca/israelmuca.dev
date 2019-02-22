@@ -64,7 +64,7 @@ export default {
 }
 
 .small-body {
-  max-width: 60%;
+  max-width: 50%;
 }
 
 .description-tag {
@@ -127,15 +127,21 @@ blockquote > p {
   white-space: inherit;
   background: inherit;
   margin: inherit;
+  margin-bottom: 4px !important;
   margin-block-start: inherit;
   margin-block-end: inherit;
   margin-inline-start: inherit;
   margin-inline-end: inherit;
-  font-family: inherit;
+  font-family: "Work Sans";
+  font-size: 16px;
 }
 
 blockquote {
-  margin-bottom: 10px;
+  margin-bottom: 20px !important;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: .25em 10px;
+  padding: 0.25em 10px;
 }
 
 p {
@@ -143,8 +149,8 @@ p {
   font-family: "Work Sans";
   font-size: 21px;
   letter-spacing: -0.88px;
-  line-height: 37px;
-  margin-bottom: 10px;
+  line-height: 32px;
+  margin-bottom: 25px;
 }
 
 h2 {
@@ -167,21 +173,12 @@ ul {
   list-style-type: disc;
   list-style-position: inside;
   margin-left: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
-
-/* .body p {
-  color: #000000;
-  font-family: "Work Sans";
-  font-size: 21px;
-  letter-spacing: -0.88px;
-  line-height: 37px;
+p ~ pre {
+  margin-top: -20px !important;
+  margin-bottom: 14px !important;
 }
 
-div h2 {
-  color: #000000;
-  font-family: "Work Sans";
-  font-size: 28px;
-} */
 </style>
