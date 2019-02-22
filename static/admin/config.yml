@@ -14,8 +14,8 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: Type, name: type, widget: string, required: true}
       - {label: Title, name: title, widget: string, required: true}
-      - {label: Summary, name: summary, widget: text, required: true, pattern: ["^.{180,220}$", "Must be within 180 and 220 characters"]}
-      - {label: SEO Description, name: description, widget: text, required: true, pattern: ["^.{50,300}$", "Must be within 50 and 300 chars"]}
+      - {label: Summary, name: summary, widget: text, required: true, pattern: ['.{180,220}', "Must be within 180 and 220 characters"]}
+      - {label: SEO, name: description, widget: text, required: true, pattern: ['.{50,300}', "Must be within 50 and 300 chars"]}
       - {label: Keywords, name: keywords, widget: list}
       - {label: Publish date, name: date, widget: datetime}
       - {label: Body, name: body, widget: markdown}
