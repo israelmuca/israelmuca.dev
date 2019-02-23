@@ -26,7 +26,7 @@ $ npm run generate
 ```
 
 ## Getting started
-To serve your site from Netlify, you need to...
+To serve your site from Netlify, you need to...  
 ###TBD
 
 ## Built with
