@@ -1,9 +1,13 @@
-# {{ name }}
+# My personal webpage with blog
+A landing page with tutorials, and articles I'll be writing.
 
-> {{ description }}
+## Features
+- Netlify CMS on `/admin` to modify the posts.
+- On each commit Netlify compiles the assets and serves them on their CDN.
+- The compilation creates blogpost pages from each `Markdown` files in `/content/blog/`.
+
 
 ## Build Setup
-
 ``` bash
 # install dependencies
 $ npm install # Or yarn install
@@ -20,8 +24,18 @@ $ npm start
 $ npm run generate
 ```
 
-See [starter template documentation in the README on GitHub](https://github.com/renestalder/nuxt-netlify-cms-starter-template) for additional usage and configuration.
+## Getting started
+To serve your site from Netlify, you need to...
+###TBD
 
-## Edit content
+## Built with
+- [Vue.js](https://vuejs.org/)
+- [Nuxt.js](https://nuxtjs.org/)
+- [Netlify CMS](https://www.netlifycms.org/)
+- [Nuxtdown](https://www.npmjs.com/package/nuxtdown)
+- [Bulma](https://www.bulma.io)
+- [Prism](https://prismjs.com/)
+- ❤️
 
-Access `yourwebsite.com/admin`, e.g. `localhost:3000/admin`.
+## Hosted in
+- [Netlify](https://www.netlify.com/)
