@@ -27,7 +27,7 @@ $ npm run generate
 
 ## Getting started
 To serve your site from Netlify, you need to...  
-###TBD
+### TBD
 
 ## Built with
 - [Vue.js](https://vuejs.org/)
