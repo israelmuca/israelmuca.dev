@@ -93,6 +93,14 @@ hr {
   margin-bottom: 50px;
 }
 
+.body a {
+  color: #ff445b;
+}
+.body a:hover {
+  color: #ff445b;
+  text-decoration: underline;
+}
+
 .number {
   display: inline;
   padding: inherit;
@@ -105,14 +113,6 @@ hr {
   white-space: inherit;
   background: inherit;
   margin: inherit;
-}
-
-a {
-  color: #ff445b;
-}
-a:hover {
-  color: #ff445b;
-  text-decoration: underline;
 }
 
 blockquote > p {
