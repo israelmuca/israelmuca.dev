@@ -30,7 +30,7 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Landing page with blog for IsraelMuCa"
+          content: "Israel Muñoz's blog"
         },
         {
           hid: "keywords",
