@@ -82,6 +82,7 @@ export default {
 <style scoped>
 footer {
   margin-top: 60px;
+  padding-bottom: 48px;
 }
 
 .contact-me {
