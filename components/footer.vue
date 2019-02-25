@@ -21,7 +21,7 @@
               class="external-link"
             >
               <span class="fab">
-                <fab :icon="fab.faGithub"/>
+                <fab class="brand-icon" :icon="fab.faGithub"/>
               </span>
             </a>
           </div>
@@ -34,7 +34,7 @@
               aria-label="Twitter"
               class="external-link"
             >
-              <fab :icon="fab.faTwitter"/>
+              <fab class="brand-icon" :icon="fab.faTwitter"/>
             </a>
           </div>
         </div>
@@ -49,17 +49,12 @@
           </div>
         </div>
         <!-- Right side -->
-        <!-- <div class="level-right">
-          <a href="#" class="level-item">
-            <span class="footer-link">BLOG</span>
+        <div class="level-right">
+          <a :href="headerAnchor" class="level-item">
+            <fab class="arrow-icon" :icon="fas.faArrowCircleUp"/>
+            <span class="footer-link">Back to top</span>
           </a>
-          <a href="#" class="level-item">
-            <span class="footer-link">ABOUT</span>
-          </a>
-          <a href="#" class="level-item">
-            <span class="footer-link">CONTACT</span>
-          </a>
-        </div> -->
+        </div>
       </nav>
     </div>
   </footer>
@@ -67,11 +62,18 @@
 
 <script>
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 
 export default {
   computed: {
     fab() {
       return fab;
+    },
+    fas() {
+      return fas;
+    },
+    headerAnchor() {
+      return `${this.$nuxt.$route.path}#header`;
     }
   }
 };
@@ -93,10 +95,16 @@ footer {
   line-height: 64px;
 }
 
-.svg-inline--fa {
+.brand-icon {
   height: 2em;
   width: 2em;
   color: #4a4a4a;
+}
+
+.arrow-icon {
+  height: 1.5em;
+  width: 1.5em;
+  color: #9b9b9b;
 }
 
 .email {
@@ -110,15 +118,14 @@ footer {
 }
 
 .footer-link {
-  height: 16px;
-  width: 43px;
   color: #9b9b9b;
   font-family: "Work Sans";
   font-size: 14px;
   line-height: 16px;
+  padding-left: 10px;
 }
 
 .svg-inline--fa:hover {
-    color: #3273dc;
+  color: #3273dc;
 }
 </style>

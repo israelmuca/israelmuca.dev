@@ -7,6 +7,10 @@ module.exports = {
         {
           set: '@fortawesome/free-brands-svg-icons',
           icons: ['faGithub', 'faTwitter']
+        },
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
         }
       ]
     }]

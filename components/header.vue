@@ -1,6 +1,6 @@
 <template>
   <!-- Navbar -->
-  <section class="hero is-medium">
+  <section class="hero is-medium" id="header">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
