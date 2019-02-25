@@ -100,6 +100,9 @@ footer {
   width: 2em;
   color: #4a4a4a;
 }
+.brand-icon:hover {
+  color: #3273dc;
+}
 
 .arrow-icon {
   height: 1.5em;
@@ -123,9 +126,5 @@ footer {
   font-size: 14px;
   line-height: 16px;
   padding-left: 10px;
-}
-
-.svg-inline--fa:hover {
-  color: #3273dc;
 }
 </style>

@@ -79,6 +79,7 @@ export default {
       return fab;
     },
     contactAnchor() {
+      debugger;
       return `${this.$nuxt.$route.path}#contact`
     }
   }
