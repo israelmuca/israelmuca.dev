@@ -48,10 +48,10 @@
               href="https://www.github.com/IsraelMuCa"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Githubs"
+              aria-label="Github"
             >
               <span class="fab">
-                <fab :icon="fab.faGithub"/>
+                <fab class="brand-icon" :icon="fab.faGithub"/>
               </span>
             </a>
             <a
@@ -61,7 +61,7 @@
               rel="noopener noreferrer"
               aria-label="Twitter"
             >
-              <fab :icon="fab.faTwitter"/>
+              <fab class="brand-icon" :icon="fab.faTwitter"/>
             </a>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default {
   padding-bottom: 50px;
 }
 
-.svg-inline--fa {
+.brand-icon {
   height: 2em;
   width: 2em;
 }
