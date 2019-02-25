@@ -6,8 +6,7 @@
       >Hello! I'm Israel Muñoz, a Full Stack Web Developer. I'm currently working in expanding access to computer science in mexican schools.</h1>
     </Header>
     <div class="container">
-      <ArticleCard></ArticleCard>
-      <ArticleCard></ArticleCard>
+      <ArticleCard v-for="post in posts" v-bind:key="post.id" v-bind:articleInfo="post"></ArticleCard>
     </div>
     <Footer></Footer>
   </div>
@@ -39,6 +38,14 @@ export default {
             "Full Stack full-stack node.js nodejs express vue nuxt landing blog javascript jamstack"
         }
       ]
+    };
+  },
+  asyncData: async ({ app }) => {
+    return {
+      posts: await app
+        .$content("/blog")
+        .query({ exclude: ["description", "keywords", "date", "body"] })
+        .getAll()
     };
   }
 };

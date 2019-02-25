@@ -2,24 +2,36 @@
   <article class="media">
     <figure class="media-left">
       <figure class="image">
-        <img src="~~/static/images/assets/random.jpeg">
+        <img :src="image">
       </figure>
     </figure>
 
     <div class="media-content">
       <div class="content">
-        <p class="art-tag">ARTICLE</p>
+        <p class="art-tag">{{ articleInfo.type }}</p>
         <br>
-        <p class="art-title">Title of the article</p>
+        <p class="art-title">{{ articleInfo.title }}</p>
         <br>
-        <p class="art-extract">"Article extract... Do irure esse ullamco fugiat ad esse laborum excepteur. Veniam ex amet sunt officia culpa eiusmod reprehenderit labore sint. Nostrud cupidatat est nulla qui est occaecat cillum id adipisicing..."</p>
-        <a class="button is-black is-medium">
+        <p class="art-extract">{{ articleInfo.summary }}</p>
+        <nuxt-link :to="articleInfo.permalink" class="button is-black is-medium" >
           <span class="button-text">Read More</span>
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </article>
 </template>
+
+<script>
+export default {
+  props: ['articleInfo'],
+  computed: {
+    image: function() {
+      return `${process.env.BASE_URL}${this.articleInfo.thumbnail}`
+    }
+  }
+}
+</script>
+
 
 <style scoped>
 
