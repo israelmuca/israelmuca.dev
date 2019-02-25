@@ -10,10 +10,9 @@ description: >-
   polyglot.js to easily adjust the translations to be shown to the end user in
   any language that you want, fulfilling i18n requirements while decoupling your
   code.
-keywords:
-  - >-
-    node.js backend express i18n polyglot internationalization translation
-    tutorial es6 babel express-validator
+keywords: >-
+  node.js backend express i18n polyglot internationalization translation
+  tutorial es6 babel express-validator
 date: '2019-02-22T11:43:30-06:00'
 thumbnail: /images/uploads/kevin-walker-751074-unsplash.jpg
 ---
