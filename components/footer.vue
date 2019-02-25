@@ -73,7 +73,7 @@ export default {
       return fas;
     },
     headerAnchor() {
-      return `${this.$nuxt.$route.path}#header`;
+      return `${this.$route.path}#header`;
     }
   }
 };
