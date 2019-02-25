@@ -13,9 +13,9 @@
         <p class="art-title">{{ articleInfo.title }}</p>
         <br>
         <p class="art-extract">{{ articleInfo.summary }}</p>
-        <a class="button is-black is-medium" :href="URL">
+        <nuxt-link :to="articleInfo.permalink" class="button is-black is-medium">
           <span class="button-text">Read More</span>
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </article>

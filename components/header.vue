@@ -5,9 +5,9 @@
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a href="#" class="navbar-item">
+            <nuxt-link to="/" class="navbar-item">
               <span class="israel-munoz">ISRAEL MUÑOZ</span>
-            </a>
+            </nuxt-link>
             <span class="navbar-burger burger" data-target="navbarMenuHero">
               <span></span>
               <span></span>
@@ -19,13 +19,10 @@
               <a href="#" class="navbar-item">
                 <span class="header-link">BLOG</span>
               </a>
-<!--               <a class="navbar-item button is-black">
-                <span class="header-link">Blog</span>
-              </a> -->
               <a href="#" class="navbar-item">
                 <span class="header-link">ABOUT</span>
               </a>
-              <a href="#" class="navbar-item">
+              <a :href="contactAnchor" class="navbar-item">
                 <span class="header-link">CONTACT</span>
               </a>
             </div>
@@ -80,6 +77,9 @@ export default {
   computed: {
     fab() {
       return fab;
+    },
+    contactAnchor() {
+      return `${this.$nuxt.$route.path}#contact`
     }
   }
 };

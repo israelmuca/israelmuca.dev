@@ -10,16 +10,19 @@
       <hr>
       <nuxtdown-body class="body" :body="post.body"/>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Header from "~~/components/header.vue";
+import Footer from "~~/components/footer.vue";
 import Prism from "prismjs";
 
 export default {
   components: {
-    Header
+    Header,
+    Footer
   },
   head: function() {
     return {
@@ -42,6 +45,9 @@ export default {
     return {
       post: (await app.$content("/blog").get(route.path)) || payload
     };
+  },
+  mounted() {
+    Prism.highlightAll();
   }
 };
 </script>
@@ -88,7 +94,7 @@ export default {
 }
 
 hr {
-  border: 1px solid #E2E5ED;
+  border: 1px solid #e2e5ed;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -140,7 +146,7 @@ blockquote {
   margin-bottom: 20px !important;
   background: #f9f9f9;
   border-left: 10px solid #ccc;
-  margin: .25em 10px;
+  margin: 0.25em 10px;
   padding: 0.25em 10px;
 }
 
@@ -180,5 +186,4 @@ p ~ pre {
   margin-top: -20px !important;
   margin-bottom: 14px !important;
 }
-
 </style>

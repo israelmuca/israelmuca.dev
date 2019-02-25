@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container">
       <!-- First level -->
       <nav class="level is-mobile">
