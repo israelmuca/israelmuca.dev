@@ -13,9 +13,9 @@
         <p class="art-title">{{ articleInfo.title }}</p>
         <br>
         <p class="art-extract">{{ articleInfo.summary }}</p>
-        <nuxt-link :to="articleInfo.permalink" class="button is-black is-medium" >
+        <a class="button is-black is-medium" :href="URL">
           <span class="button-text">Read More</span>
-        </nuxt-link>
+        </a>
       </div>
     </div>
   </article>
@@ -23,18 +23,20 @@
 
 <script>
 export default {
-  props: ['articleInfo'],
+  props: ["articleInfo"],
   computed: {
+    URL: function() {
+      return `${process.env.BASE_URL}${this.articleInfo.permalink}`;
+    },
     image: function() {
-      return `${process.env.BASE_URL}${this.articleInfo.thumbnail}`
+      return `${process.env.BASE_URL}${this.articleInfo.thumbnail}`;
     }
   }
-}
+};
 </script>
 
 
 <style scoped>
-
 article {
   border-top-width: 0px !important;
 }
