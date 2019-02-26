@@ -68,10 +68,6 @@ h1 {
   padding-bottom: 77px;
 }
 
-.is-active {
-  background-color: black;
-}
-
 @media screen and (max-width: 1087px) {
   h1 {
     font-size: 36px;

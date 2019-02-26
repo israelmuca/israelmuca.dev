@@ -158,6 +158,10 @@ export default {
   .navbar {
     padding-top: 25px;
   }
+  
+  .is-active {
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
 
   .hero-foot {
     padding-bottom: 25px;
