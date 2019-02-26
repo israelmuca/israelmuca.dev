@@ -133,6 +133,9 @@ export default {
 .navbar-burger {
   color: white;
 }
+.navbar-burger:hover {
+  background-color: transparent;
+}
 
 .israel-munoz {
   color: #ff445b;
@@ -171,6 +174,10 @@ export default {
 @media screen and (max-width: 1087px) {
   .navbar {
     padding-top: 25px;
+  }
+
+  .navbar-menu {
+    box-shadow: none;
   }
 
   .is-active {

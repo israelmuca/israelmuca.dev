@@ -75,7 +75,8 @@ article {
   font-family: "Work Sans";
   font-size: 21px;
   letter-spacing: -0.88px;
-  line-height: 30px;
+  line-height: 32px;
+  margin-bottom: 25px;
   margin-top: -20px;
 }
 

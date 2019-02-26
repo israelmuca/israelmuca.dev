@@ -4,7 +4,7 @@
       <h1 class="title">{{ post.title }}</h1>
       <h2 class="subtitle">{{ post.summary }}</h2>
     </Header>
-    <div class="container small-body">
+    <div class="container content-container">
       <p class="description-tag">DESCRIPTION</p>
       <p class="description-text">{{post.description}}</p>
       <hr>
@@ -69,7 +69,7 @@ export default {
   line-height: 35px;
 }
 
-.small-body {
+.content-container {
   max-width: 50%;
 }
 
@@ -206,8 +206,14 @@ p ~ pre {
     line-height: 22px;
   }
 
-  .small-body {
+  .content-container {
     max-width: 95%;
+  }
+}
+
+@media screen and (min-width: 1088px) and (max-width: 1280px) {
+.content-container {
+    max-width: 75%;
   }
 }
 </style>
