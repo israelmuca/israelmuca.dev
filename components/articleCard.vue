@@ -2,7 +2,7 @@
   <article class="media">
     <figure class="media-left">
       <figure class="image">
-        <img :src="image">
+        <img class="clip-path" :src="image">
       </figure>
     </figure>
 
@@ -42,7 +42,13 @@ article {
 }
 
 .media-left {
-  max-width: 50%;
+  max-width: 460px;
+  max-height: 460px;
+}
+.clip-path {
+  /* clip-path: inset(10% 10% 10% 10%); */
+  width: 100%;
+  height: 100%;
 }
 
 .art-tag {

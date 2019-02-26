@@ -25,6 +25,17 @@
               </span>
             </a>
           </div>
+          <div class="level-item">
+            <a
+              href="https://www.linkedin.com/in/israel-mu%C3%B1oz-1a9265161/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Linkedin"
+              class="external-link"
+            >
+              <fab class="brand-icon" :icon="fab.faLinkedin"/>
+            </a>
+          </div>
           <!-- Twitter -->
           <div class="level-item">
             <a

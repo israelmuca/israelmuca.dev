@@ -50,9 +50,16 @@
               rel="noopener noreferrer"
               aria-label="Github"
             >
-              <span class="fab">
-                <fab class="brand-icon" :icon="fab.faGithub"/>
-              </span>
+              <fab class="brand-icon" :icon="fab.faGithub"/>
+            </a>
+            <a
+              class="navbar-item"
+              href="https://www.linkedin.com/in/israel-mu%C3%B1oz-1a9265161/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Linkedin"
+            >
+              <fab class="brand-icon" :icon="fab.faLinkedin"/>
             </a>
             <a
               class="navbar-item"
@@ -79,7 +86,7 @@ export default {
       return fab;
     },
     contactAnchor() {
-      return `${this.$route.path}#contact`
+      return `${this.$route.path}#contact`;
     }
   }
 };
