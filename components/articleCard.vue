@@ -1,21 +1,18 @@
 <template>
   <article class="media">
-    <figure class="media-left">
-      <figure class="image">
-        <img class="clip-path" :src="image">
-      </figure>
-    </figure>
-
-    <div class="media-content">
-      <div class="content">
-        <p class="art-tag">{{ articleInfo.type }}</p>
-        <br>
-        <p class="art-title">{{ articleInfo.title }}</p>
-        <br>
-        <p class="art-extract">{{ articleInfo.summary }}</p>
-        <nuxt-link :to="articleInfo.permalink" class="button is-black is-medium">
-          <span class="button-text">Read More</span>
-        </nuxt-link>
+    <div class="container">
+      <div class="columns">
+        <div class="column image" :style="backgroundImage"></div>
+        <div class="column text">
+          <p class="art-tag">{{ articleInfo.type }}</p>
+          <br>
+          <p class="art-title">{{ articleInfo.title }}</p>
+          <br>
+          <p class="art-extract">{{ articleInfo.summary }}</p>
+          <nuxt-link :to="articleInfo.permalink" class="button is-black is-medium">
+            <span class="button-text">Read More</span>
+          </nuxt-link>
+        </div>
       </div>
     </div>
   </article>
@@ -30,6 +27,9 @@ export default {
     },
     image: function() {
       return `${process.env.BASE_URL}${this.articleInfo.thumbnail}`;
+    },
+    backgroundImage: function() {
+      return `background-image: url("${this.image}");`;
     }
   }
 };
@@ -41,15 +41,20 @@ article {
   border-top-width: 0px !important;
 }
 
-.media-left {
-  max-width: 460px;
-  max-height: 460px;
+.container {
+  max-width: 70%;
 }
-.clip-path {
-  /* clip-path: inset(10% 10% 10% 10%); */
+
+.image {
+  background-position: center;
+  background-size: cover;
+}
+
+/* .clip-path {
+  /* clip-path: inset(10% 10% 10% 10%);
   width: 100%;
-  height: 100%;
-}
+  height: auto;
+} */
 
 .art-tag {
   color: #ff445b;

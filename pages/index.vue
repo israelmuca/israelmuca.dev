@@ -6,7 +6,7 @@
       >Hello! I'm Israel Muñoz, a Full Stack Web Developer. I'm currently working in expanding access to computer science in mexican schools.</h1>
     </Header>
     <div class="container">
-      <ArticleCard v-for="post in posts" v-bind:key="post.id" v-bind:articleInfo="post"></ArticleCard>
+      <ArticleCard v-for="post in posts" :key="post.id" :articleInfo="post"></ArticleCard>
     </div>
     <Footer></Footer>
   </div>

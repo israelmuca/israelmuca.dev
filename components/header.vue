@@ -1,6 +1,6 @@
 <template>
   <!-- Navbar -->
-  <section class="hero is-medium" id="header">
+  <section class="hero is-medium" id="header" :style="backgroundImage">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -81,21 +81,29 @@
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
 export default {
+  props: ["image"],
   computed: {
     fab() {
       return fab;
     },
     contactAnchor() {
       return `${this.$route.path}#contact`;
+    },
+    backgroundImage() {
+      if(this.image) {
+        return `background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("${this.image}"); background-position: center;`;
+      } else {
+        return `background-color: black;`
+      }
     }
   }
 };
 </script>
 
 <style scoped>
-.hero {
-  background-color: black;
-}
+/* .hero {
+  
+} */
 
 .navbar {
   padding-top: 50px;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header>
+    <Header :image="post.thumbnail">
       <h1 class="title">{{ post.title }}</h1>
       <h2 class="subtitle">{{ post.summary }}</h2>
     </Header>
