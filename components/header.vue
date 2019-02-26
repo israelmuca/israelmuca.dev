@@ -96,6 +96,7 @@ export default {
       return fab;
     },
     contactAnchor() {
+      console.log(`path: ${this.$route.path}`)
       return `${this.$route.path}#contact`;
     },
     backgroundImage() {
@@ -158,7 +159,7 @@ export default {
   .navbar {
     padding-top: 25px;
   }
-  
+
   .is-active {
     background-color: rgba(0, 0, 0, 0) !important;
   }
