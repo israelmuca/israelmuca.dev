@@ -58,7 +58,7 @@ article {
   font-weight: 600;
   letter-spacing: 2.47px;
   line-height: 16px;
-  margin-top: 25px;
+  margin-top: 0px;
   margin-bottom: 0 !important;
 }
 
