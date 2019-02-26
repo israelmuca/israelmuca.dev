@@ -96,8 +96,21 @@ export default {
       return fab;
     },
     contactAnchor() {
-      console.log(`path: ${this.$route.path}`)
-      return `${this.$route.path}#contact`;
+      // console.log(`path: ${this.$route.path}`)
+      return `${this.realPath}#contact`;
+    },
+    realPath() {
+      const path = this.$route.path
+      if (path.length == 1) {
+        return path
+      } else {
+        const lastChar = path.substr(path.length - 1)
+        if (lastChar === '/') {
+          return path.slice(0, -1)
+        } else {
+          return path
+        }
+      }
     },
     backgroundImage() {
       if (this.image) {
