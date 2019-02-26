@@ -48,13 +48,8 @@ article {
 .image {
   background-position: center;
   background-size: cover;
+  min-height: 200px;
 }
-
-/* .clip-path {
-  /* clip-path: inset(10% 10% 10% 10%);
-  width: 100%;
-  height: auto;
-} */
 
 .art-tag {
   color: #ff445b;

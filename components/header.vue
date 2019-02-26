@@ -8,22 +8,26 @@
             <nuxt-link to="/" class="navbar-item">
               <span class="israel-munoz">ISRAEL MUÑOZ</span>
             </nuxt-link>
-            <span class="navbar-burger burger" data-target="navbarMenuHero">
+            <span
+              class="navbar-burger"
+              @click="showNav = !showNav"
+              :class="{ 'is-active': showNav }"
+            >
               <span></span>
               <span></span>
               <span></span>
             </span>
           </div>
-          <div id="navbarMenuHero" class="navbar-menu">
+          <div class="navbar-menu" :class="{ 'is-active': showNav }">
             <div class="navbar-end">
-              <a href="#" class="navbar-item">
-                <span class="header-link">BLOG</span>
+              <a href="#" class="navbar-item is-clearfix">
+                <span class="header-link is-pulled-right">BLOG</span>
               </a>
-              <a href="#" class="navbar-item">
-                <span class="header-link">ABOUT</span>
+              <a href="#" class="navbar-item is-clearfix">
+                <span class="header-link is-pulled-right">ABOUT</span>
               </a>
-              <a :href="contactAnchor" class="navbar-item">
-                <span class="header-link">CONTACT</span>
+              <a :href="contactAnchor" class="navbar-item is-clearfix">
+                <span class="header-link is-pulled-right">CONTACT</span>
               </a>
             </div>
           </div>
@@ -82,6 +86,11 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 
 export default {
   props: ["image"],
+  data: function() {
+    return {
+      showNav: false
+    };
+  },
   computed: {
     fab() {
       return fab;
@@ -90,10 +99,12 @@ export default {
       return `${this.$route.path}#contact`;
     },
     backgroundImage() {
-      if(this.image) {
-        return `background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("${this.image}"); background-position: center;`;
+      if (this.image) {
+        return `background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("${
+          this.image
+        }"); background-position: center;`;
       } else {
-        return `background-color: black;`
+        return `background-color: black;`;
       }
     }
   }
@@ -101,12 +112,12 @@ export default {
 </script>
 
 <style scoped>
-/* .hero {
-  
-} */
-
 .navbar {
   padding-top: 50px;
+}
+
+.navbar-burger {
+  color: white;
 }
 
 .israel-munoz {
@@ -124,8 +135,6 @@ export default {
 }
 
 .header-link {
-  height: 16px;
-  width: 67px;
   color: #ffffff;
   font-family: "Work Sans";
   font-size: 14px;
@@ -143,6 +152,21 @@ export default {
 .brand-icon {
   height: 2em;
   width: 2em;
+}
+
+@media screen and (max-width: 1087px) {
+  .navbar {
+    padding-top: 25px;
+  }
+
+  .hero-foot {
+    padding-bottom: 25px;
+  }
+
+  .brand-icon {
+    height: 1.5em;
+    width: 1.5em;
+  }
 }
 </style>
 

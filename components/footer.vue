@@ -52,7 +52,7 @@
       </nav>
 
       <!-- Second Level -->
-      <nav class="level is-mobile">
+      <nav class="level">
         <!-- Left side -->
         <div class="level-left">
           <div class="level-item">
@@ -123,8 +123,6 @@ footer {
 }
 
 .email {
-  height: 37px;
-  width: 243px;
   color: #000000;
   font-family: "Work Sans";
   font-size: 28px;
@@ -138,5 +136,20 @@ footer {
   font-size: 14px;
   line-height: 16px;
   padding-left: 10px;
+}
+
+@media screen and (max-width: 1087px) {
+  footer {
+    padding-bottom: 24px;
+  }
+
+  .contact-me {
+    font-size: 36px;
+  }
+
+  .brand-icon {
+    height: 1.5em;
+    width: 1.5em;
+  }
 }
 </style>

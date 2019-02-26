@@ -186,4 +186,28 @@ p ~ pre {
   margin-top: -20px !important;
   margin-bottom: 14px !important;
 }
+
+@media screen and (max-width: 1087px) {
+  .navbar-menu {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .hero-body {
+    padding-bottom: 12px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .small-body {
+    max-width: 95%;
+  }
+}
 </style>

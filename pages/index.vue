@@ -67,4 +67,11 @@ h1 {
 .container:last-child {
   padding-bottom: 77px;
 }
+
+@media screen and (max-width: 1087px) {
+  h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
 </style>
