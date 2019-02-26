@@ -3,6 +3,7 @@
     <div class="container">
       <div class="columns">
         <div class="column image" :style="backgroundImage"></div>
+        <div class="column separator"></div>
         <div class="column text">
           <p class="art-tag">{{ articleInfo.type }}</p>
           <br>
@@ -51,6 +52,10 @@ article {
   min-height: 200px;
 }
 
+.separator {
+  max-width: 20px;
+}
+
 .art-tag {
   color: #ff445b;
   font-family: "Work Sans";
@@ -96,5 +101,17 @@ article {
   font-weight: 600;
   letter-spacing: 2.47px;
   line-height: 16px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1088px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 1089px) and (max-width: 1280px) {
+  .container {
+    max-width: 80%;
+  }
 }
 </style>
