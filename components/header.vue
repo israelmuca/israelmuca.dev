@@ -96,7 +96,7 @@ export default {
       return fab;
     },
     contactAnchor() {
-      // console.log(`path: ${this.$route.path}`)
+      console.log(`path: ${this.realPath}`)
       return `${this.realPath}#contact`;
     },
     realPath() {
