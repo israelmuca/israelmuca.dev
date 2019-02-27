@@ -103,9 +103,12 @@ article {
   line-height: 16px;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1088px) {
+@media screen and (min-width: 10px) and (max-width: 1088px) {
   .container {
     max-width: 90%;
+  }
+  .separator {
+    display: none;
   }
 }
 

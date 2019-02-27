@@ -82,9 +82,6 @@ export default {
     },
     fas() {
       return fas;
-    },
-    headerAnchor() {
-      return `${this.$route.path}#header`;
     }
   }
 };

@@ -20,9 +20,9 @@
           </div>
           <div class="navbar-menu" :class="{ 'is-active': showNav }">
             <div class="navbar-end">
-              <a href="#" class="navbar-item is-clearfix">
+              <nuxt-link to="/#blog" class="navbar-item is-clearfix">
                 <span class="header-link is-pulled-right">BLOG</span>
-              </a>
+              </nuxt-link>
               <a href="#" class="navbar-item is-clearfix">
                 <span class="header-link is-pulled-right">ABOUT</span>
               </a>
@@ -94,23 +94,6 @@ export default {
   computed: {
     fab() {
       return fab;
-    },
-    contactAnchor() {
-      console.log(`path: ${this.realPath}`)
-      return `${this.realPath}#contact`;
-    },
-    realPath() {
-      const path = this.$route.path
-      if (path.length == 1) {
-        return path
-      } else {
-        const lastChar = path.substr(path.length - 1)
-        if (lastChar === '/') {
-          return path.slice(0, -1)
-        } else {
-          return path
-        }
-      }
     },
     backgroundImage() {
       if (this.image) {
