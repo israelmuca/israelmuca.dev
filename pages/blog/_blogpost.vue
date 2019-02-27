@@ -198,21 +198,31 @@ p ~ pre {
 
   .title {
     font-size: 30px;
-    line-height: 32px;
+    line-height: 36px;
   }
 
   .subtitle {
-    font-size: 20px;
-    line-height: 22px;
+    padding-top: 15px;
+    font-size: 22px;
+    line-height: 30px;
   }
 
   .content-container {
-    max-width: 95%;
+    max-width: 90%;
+  }
+
+  .description-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  p {
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 1088px) and (max-width: 1280px) {
-.content-container {
+  .content-container {
     max-width: 75%;
   }
 }

@@ -114,7 +114,7 @@ export default {
     },
     backgroundImage() {
       if (this.image) {
-        return `background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("${
+        return `background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("${
           this.image
         }"); background-position: center;`;
       } else {

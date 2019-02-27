@@ -16,7 +16,6 @@ module.exports = {
       {
         page: "/blog/_blogpost",
         permalink: "blog/:slug",
-        //data: TODO:
         isPost: true
       }
     ]

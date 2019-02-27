@@ -25,17 +25,17 @@ export default {
   },
   head() {
     return {
+      title: "Israel Muñoz",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Israel Muñoz's blog"
+          content: "A blog about Web Development"
         },
         {
           hid: "keywords",
           name: "keywords",
-          content:
-            "Full Stack full-stack node.js nodejs express vue nuxt landing blog javascript jamstack"
+          content: "Full Stack full-stack node.js nodejs express vue nuxt landing blog javascript jamstack"
         }
       ]
     };

@@ -151,5 +151,10 @@ footer {
     height: 1.5em;
     width: 1.5em;
   }
+
+  .external-link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 </style>
