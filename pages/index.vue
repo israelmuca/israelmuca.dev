@@ -6,6 +6,11 @@
       >Hello! I'm Israel Muñoz, a Full Stack Web Developer. I'm currently working in expanding access to computer science in mexican schools.</h1>
     </Header>
     <div class="container" id="blog">
+      <div class="columns">
+        <div class="column title-column">
+          <span class="blog-title">Latest articles</span>
+        </div>
+      </div>
       <ArticleCard v-for="post in posts" :key="post.id" :articleInfo="post"></ArticleCard>
     </div>
     <Footer></Footer>
@@ -35,7 +40,8 @@ export default {
         {
           hid: "keywords",
           name: "keywords",
-          content: "Full Stack full-stack node.js nodejs express vue nuxt landing blog javascript jamstack"
+          content:
+            "Full Stack full-stack node.js nodejs express vue nuxt landing blog javascript jamstack"
         }
       ]
     };
@@ -62,10 +68,23 @@ h1 {
 }
 
 .container {
-  padding-top: 77px;
+  padding-top: 35px;
 }
 .container:last-child {
   padding-bottom: 77px;
+}
+
+.title-column {
+  margin-bottom: 25px;
+}
+
+.blog-title {
+  color: #000000;
+  font-family: "Work Sans";
+  font-size: 28px;
+  letter-spacing: -0.88px;
+  line-height: 32px;
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 1087px) {
@@ -73,5 +92,9 @@ h1 {
     font-size: 36px;
     line-height: 46px;
   }
+
+  .title-column {
+  margin-left: 20px;
+}
 }
 </style>

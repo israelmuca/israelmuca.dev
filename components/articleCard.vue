@@ -65,6 +65,7 @@ article {
   line-height: 16px;
   margin-top: 0px;
   margin-bottom: 0 !important;
+  text-transform: capitalize;
 }
 
 .art-title {
@@ -101,6 +102,7 @@ article {
   font-weight: 600;
   letter-spacing: 2.47px;
   line-height: 16px;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 10px) and (max-width: 1088px) {
