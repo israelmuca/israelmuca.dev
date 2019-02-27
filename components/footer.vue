@@ -61,7 +61,7 @@
         </div>
         <!-- Right side -->
         <div class="level-right">
-          <a :href="headerAnchor" class="level-item">
+          <a href="#header" class="level-item">
             <fab class="arrow-icon" :icon="fas.faArrowCircleUp"/>
             <span class="footer-link">Back to top</span>
           </a>

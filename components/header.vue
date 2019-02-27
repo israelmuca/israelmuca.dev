@@ -26,7 +26,7 @@
               <a href="#" class="navbar-item is-clearfix">
                 <span class="header-link is-pulled-right">ABOUT</span>
               </a>
-              <a :href="contactAnchor" class="navbar-item is-clearfix">
+              <a href="#contact" class="navbar-item is-clearfix">
                 <span class="header-link is-pulled-right">CONTACT</span>
               </a>
             </div>
