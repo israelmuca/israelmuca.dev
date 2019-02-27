@@ -1,6 +1,6 @@
 <template>
   <article class="media">
-    <div class="container">
+    <div class="container article-card">
       <div class="columns">
         <div class="column image" :style="backgroundImage"></div>
         <div class="column separator"></div>
@@ -44,6 +44,11 @@ article {
 
 .container {
   max-width: 70%;
+}
+
+.article-card {
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .image {

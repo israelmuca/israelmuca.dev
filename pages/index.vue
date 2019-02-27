@@ -68,10 +68,7 @@ h1 {
 }
 
 .container {
-  padding-top: 35px;
-}
-.container:last-child {
-  padding-bottom: 77px;
+  margin-top: 35px;
 }
 
 .title-column {
