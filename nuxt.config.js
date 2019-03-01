@@ -6,7 +6,7 @@ module.exports = {
       imports: [
         {
           set: '@fortawesome/free-brands-svg-icons',
-          icons: ['faGithub', 'faTwitter']
+          icons: ['faGithub', 'faTwitter', 'faLinkedin']
         },
         {
           set: '@fortawesome/free-solid-svg-icons',
@@ -25,7 +25,6 @@ module.exports = {
     htmlAttrs: {
       lang: 'en',
     },
-    title: "IsraelMuCa",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" }
