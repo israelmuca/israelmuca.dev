@@ -12,7 +12,7 @@ description: >-
   as comments about the educational system in Mexico and in the world.
 keywords: >-
   blog blogging tutorials how-to howto guides webdev web development
-  entrepeneurship education front-end frontend backend back-end full-stack
+  entrepreneurship education front-end frontend backend back-end full-stack
   fullstack full stack front back end 
 date: '2019-03-01T08:19:29-06:00'
 thumbnail: /images/uploads/max-chen-1182043-unsplash-tiny.jpg
