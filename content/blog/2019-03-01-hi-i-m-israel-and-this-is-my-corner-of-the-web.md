@@ -35,7 +35,8 @@ And last but not least, entrepreneurship. I've been involved in a number of star
 
 ## Why is 42 the answer to life... the universe... everything?
 Regardless of what many people claim, Douglas Adams once claimed in a quite nonchalant way in an interview:  
-_"The answer to this is very simple,"_ Adams said. _"It was a joke. It had to be a number, an ordinary, smallish number, and I chose that one. Binary representations, base 13, Tibetan monks are all complete nonsense. I sat on my desk, stared in to the garden and thought 42 will do. I typed it out. End of story."_
+_"The answer to this is very simple,"_ Adams said. _"It was a joke. It had to be a number, an ordinary, smallish number, and I chose that one. Binary representations, base 13, Tibetan monks are all complete nonsense. I sat on my desk, stared in to the garden and thought 42 will do. I typed it out. End of story."_  
+So much for all the crazy hypothesis.
 
 ## Closure
 So there's that! My first few articles will all be WebDev related, with the first one being a little something about the JAMstack, Netlify and Nuxt.js, which are the backbone of this blog.
