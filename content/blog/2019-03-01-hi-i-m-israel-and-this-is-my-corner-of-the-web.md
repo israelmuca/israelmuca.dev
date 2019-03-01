@@ -17,7 +17,6 @@ keywords: >-
 date: '2019-03-01T08:19:29-06:00'
 thumbnail: /images/uploads/max-chen-1182043-unsplash-tiny.jpg
 ---
-# So first of all, hi! and welcome to my blog.
 
 ## Who am I?
 My name is Israel, born and raised in Monterrey, México, currently more and more Chicago based. I studied Engineering in Software Development back in 2007, worked as an intern for a couple of years, before focusing mostly on my own IT Business for over 10 years!
