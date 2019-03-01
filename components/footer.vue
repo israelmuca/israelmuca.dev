@@ -27,7 +27,7 @@
           </div>
           <div class="level-item">
             <a
-              href="https://www.linkedin.com/in/israel-mu%C3%B1oz-1a9265161/"
+              href="www.linkedin.com/in/israelmuca"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Linkedin"
