@@ -1,5 +1,4 @@
 import Prism from 'prismjs'
-import externalLinks from 'markdown-it-link-attributes'
 
 module.exports = {
   api: function(isStatic) {
@@ -26,10 +25,7 @@ module.exports = {
         config.highlight = (code, lang) => {
           return `<pre class="language-${lang}"><code class="language-${lang}">${Prism.highlight(code, Prism.languages[lang] || Prism.languages.markup)}</code></pre>`
         }
-      },
-      plugins: [
-        [ externalLinks, { target: '_blank', rel: 'noopener' } ]
-      ]
+      }
     }
   }
 };

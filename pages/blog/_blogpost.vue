@@ -5,7 +5,7 @@
       <h2 class="subtitle">{{ post.summary }}</h2>
     </Header>
     <div class="container content-container">
-      <p class="description-tag">DESCRIPTION</p>
+      <p class="description-tag">TL;DR:</p>
       <p class="description-text">{{post.description}}</p>
       <hr>
       <nuxtdown-body class="body" :body="post.body"/>
