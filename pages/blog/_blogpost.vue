@@ -25,6 +25,7 @@ export default {
     Footer
   },
   // The head function generates all the metadata for the HTML's head, in this case, title, description and keywords (for SEO purposes)
+  // Also includes twitter:card headers for correct parsing in Twitter
   head: function() {
     return {
       title: `${this.post.title}`,
@@ -38,6 +39,26 @@ export default {
           hid: "keywords",
           name: "keywords",
           content: this.post.keywords
+        },
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image"
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.post.title
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.post.description
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: this.post.thumbnail
         }
       ]
     };
