@@ -28,21 +28,69 @@ export default {
     ArticleCard,
     Footer
   },
-  // The head function generates all the metadata for the HTML's head, in this case, title, description and keywords (for SEO purposes)
+  // The head function generates all the metadata for the HTML's head
   head() {
     return {
       title: "Israel Muñoz",
       meta: [
+        // SEO meta
         {
           hid: "description",
           name: "description",
-          content: "A blog about Web Development"
+          content: "A blog about Web Development, entrepeneurship, and education."
         },
         {
           hid: "keywords",
           name: "keywords",
           content:
             "Full Stack full-stack node.js nodejs express vue nuxt landing blog javascript jamstack"
+        },
+        // Facebook's Open Graph Markup
+        {
+          hid: "og:url",
+          property: "og:url",
+          content: "https://israelmuca.dev"
+        },
+        {
+          hid: "og:type",
+          property: "og:type",
+          content: "website"
+        },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: "Hello! I'm Israel Muñoz, a Full Stack Web Developer. I'm currently working in expanding access to computer science in mexican schools."
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: "A blog about Web Development, entrepeneurship, and education."
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: "https://avatars3.githubusercontent.com/u/15834664?s=400&u=428efa70328b335936bcfc500272a48234e803c6&v=4"
+        },
+        // Twitter's Card Markup
+        {
+          hid: "twitter:card",
+          name: "twitter:card",
+          content: "summary_large_image"
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "Hello! I'm Israel Muñoz, a Full Stack Web Developer. I'm currently working in expanding access to computer science in mexican schools."
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: "A blog about Web Development, entrepeneurship, and education."
+        },
+        {
+          hid: "twitter:image",
+          name: "twitter:image",
+          content: "https://avatars3.githubusercontent.com/u/15834664?s=400&u=428efa70328b335936bcfc500272a48234e803c6&v=4"
         }
       ]
     };

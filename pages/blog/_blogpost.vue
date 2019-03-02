@@ -24,12 +24,12 @@ export default {
     Header,
     Footer
   },
-  // The head function generates all the metadata for the HTML's head, in this case, title, description and keywords (for SEO purposes)
-  // Also includes twitter:card headers for correct parsing in Twitter
+  // The head function generates all the metadata for the HTML's head
   head: function() {
     return {
       title: `${this.post.title}`,
       meta: [
+        // SEO meta
         {
           hid: "description",
           name: "description",
@@ -40,6 +40,33 @@ export default {
           name: "keywords",
           content: this.post.keywords
         },
+        // Facebook's Open Graph Markup
+        {
+          hid: "og:url",
+          property: "og:url",
+          content: this.fullURL
+        },
+        {
+          hid: "og:type",
+          property: "og:type",
+          content: "article"
+        },
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: this.post.title
+        },
+        {
+          hid: "og:description",
+          property: "og:description",
+          content: this.post.description
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: this.imageURL
+        },
+        // Twitter's Card Markup
         {
           hid: "twitter:card",
           name: "twitter:card",
@@ -74,9 +101,13 @@ export default {
     Prism.highlightAll();
   },
   computed: {
-    // image will always return the correct URL for the thumbnail, both for development and once deployed
+    // imageURL will always return the correct URL for the thumbnail, both for development and once deployed
     imageURL: function() {
-      return `${process.env.BASE_URL}${this.post.thumbnail}`
+      return `${process.env.BASE_URL}${this.post.thumbnail}`;
+    },
+    // fullURL will always return the correct URL for the og:URL, both for development and once deployed
+    fullURL: function() {
+      return `${process.env.BASE_URL}${this.$route.path}`;
     }
   }
 };
