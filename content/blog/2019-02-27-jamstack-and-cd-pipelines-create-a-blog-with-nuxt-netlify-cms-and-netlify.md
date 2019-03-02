@@ -127,8 +127,8 @@ If you have any problems implementing this, please don't hesitate and create a G
 
 ## Thanks
 There's a phrase that I love and always try and remember:
-> _If I have seen further it is by standing in the shoulders of Giants_
-> - Isaac Newton
+> _If I have seen further it is by standing in the shoulders of Giants_  
+> Isaac Newton
 
 Being true to that phrase, I have to acknowledge the many people that in one way or another contributed to this specific repo:
 - [Andrea Gomez - with her design](https://twitter.com/acgomezu)
