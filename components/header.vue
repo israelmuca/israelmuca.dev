@@ -38,6 +38,7 @@
     <!-- Body -->
     <div class="hero-body">
       <div class="container has-text-left">
+        <!-- A slot is used to reuse the header with any post or the index -->
         <slot></slot>
       </div>
     </div>
@@ -95,6 +96,7 @@ export default {
     fab() {
       return fab;
     },
+    // When props are sent to the header, the image is used as the backfround for it, if no props, just a black header
     backgroundImage() {
       if (this.image) {
         return `background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("${

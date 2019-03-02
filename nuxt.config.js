@@ -1,3 +1,5 @@
+// Global configuration for Nuxt.js
+
 module.exports = {
   modules: [
     "nuxtdown",
@@ -19,7 +21,7 @@ module.exports = {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
   },
   /*
-  ** Headers of the page
+  ** Headers for EVERY page
   */
   head: {
     htmlAttrs: {

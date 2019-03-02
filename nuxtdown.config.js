@@ -1,3 +1,5 @@
+// Global configuration for Nuxtdown
+
 import Prism from 'prismjs'
 
 module.exports = {
@@ -21,6 +23,7 @@ module.exports = {
   ],
   parsers: {
     md: {
+      // Configuration to use Prism.js processor (https://prismjs.com/)
       extend(config) {
         config.highlight = (code, lang) => {
           return `<pre class="language-${lang}"><code class="language-${lang}">${Prism.highlight(code, Prism.languages[lang] || Prism.languages.markup)}</code></pre>`

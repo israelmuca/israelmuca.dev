@@ -24,6 +24,7 @@ export default {
     Header,
     Footer
   },
+  // The head function generates all the metadata for the HTML's head, in this case, title, description and keywords (for SEO purposes)
   head: function() {
     return {
       title: `${this.post.title}`,
@@ -41,11 +42,13 @@ export default {
       ]
     };
   },
+  // Nuxt method that uses the Nuxtdown content-api to load a post to render this page with it.
   asyncData: async ({ app, route, payload }) => {
     return {
       post: (await app.$content("/blog").get(route.path)) || payload
     };
   },
+  // Once the component is mounted, we need to run Prism again to highlight the code blocks
   mounted() {
     Prism.highlightAll();
   }

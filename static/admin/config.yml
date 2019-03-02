@@ -2,23 +2,23 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-publish_mode: editorial_workflow
+publish_mode: editorial_workflow # Gives you an editorial workflow with drafts, and final reviews through automated Pull Requests
 
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Post" # Used in the UI
-    folder: "content/blog" # The path to the folder where the documents are stored
+    label: "Post" # Identifies this collection
+    folder: "content/blog" # The path to the folder where the documents are stored in the repo
     create: true # Allow users to create new documents in this collection
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title-name-goes-here.md
+    fields: # The fields each document will have, regEx patterns are only validated on submit
       - {label: Type, name: type, widget: string, required: true}
       - {label: Title, name: title, widget: string, required: true}
-      - {label: Summary (subtitle, 180 - 220), name: summary, widget: text, required: true, pattern: ['.{180,220}', "Must be within 180 and 220 characters"]}
-      - {label: TL;DR (SEO, 50-300), name: description, widget: text, required: true, pattern: ['.{50,300}', "Must be within 50 and 300 chars"]}
-      - {label: Keywords, name: keywords, widget: text}
-      - {label: Publish date, name: date, widget: datetime}
-      - {label: "Featured Image", name: "thumbnail", widget: "image", required: true}
-      - {label: Body, name: body, widget: markdown}
+      - {label: Summary 180-220, name: summary, widget: text, required: true, pattern: ['.{180,220}', "Must be within 180 and 220 characters"]}
+      - {label: TL;DR 50-300, name: description, widget: text, required: true, pattern: ['.{50,300}', "Must be within 50 and 300 chars"]}
+      - {label: Keywords, name: keywords, widget: text, required: true}
+      - {label: Publish date, name: date, widget: datetime, required: true}
+      - {label: Featured Image, name: thumbnail, widget: "image", required: true}
+      - {label: Body, name: body, widget: markdown, required: true}

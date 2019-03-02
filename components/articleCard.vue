@@ -23,12 +23,11 @@
 export default {
   props: ["articleInfo"],
   computed: {
-    URL: function() {
-      return `${process.env.BASE_URL}${this.articleInfo.permalink}`;
-    },
+    // image will always return the correct URL for the thumbnail, both for development and once deployed
     image: function() {
       return `${process.env.BASE_URL}${this.articleInfo.thumbnail}`;
     },
+    // returns an inline style with the image to be used from the props
     backgroundImage: function() {
       return `background-image: url("${this.image}");`;
     }

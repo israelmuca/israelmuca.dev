@@ -28,6 +28,7 @@ export default {
     ArticleCard,
     Footer
   },
+  // The head function generates all the metadata for the HTML's head, in this case, title, description and keywords (for SEO purposes)
   head() {
     return {
       title: "Israel Muñoz",
@@ -46,6 +47,7 @@ export default {
       ]
     };
   },
+  // Nuxt method that uses the Nuxtdown content-api to get all the posts with only certain fields that I need for the ArticleCard.vue.
   asyncData: async ({ app }) => {
     return {
       posts: await app
