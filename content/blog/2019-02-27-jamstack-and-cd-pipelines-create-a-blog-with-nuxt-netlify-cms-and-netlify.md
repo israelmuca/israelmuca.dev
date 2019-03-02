@@ -17,7 +17,7 @@ date: '2019-03-01T21:15:00-06:00'
 thumbnail: /images/uploads/john-barkiple-539580-unsplash-micro.jpeg
 ---
 ## The "old" ways
-Say you wanted to create a blog, you'd could easily run a Wordpress site, with a linux server distributing your content. On each page load, the server would generate the webpages, and serve them to the user.
+Say you wanted to create a blog, you could easily run a Wordpress site, with a Linux server distributing your content. On each page load, the server would generate the webpages, and serve them to the user.
 Every request puts the server to work.
 It's a perfectly viable option, although slower compared to more modern options, more insecure as you have to be doing the updates on your server (or paying more for a managed server), and it requires using PHP and having a database running.
 
@@ -28,7 +28,7 @@ The benefits that this approach has is that your webpage ends up being blazing f
 Your page is also more secure! Since you don't have exposed APIs, you could even use Wordpress as a CMS but without the security risks or performance problems of running Wordpress itself.
 The performance is definitely worth mentioning again, as it is quite easy to make your site super fast.
 
-There is one caveat though. Every time you change anything, you have to rebuild your assets, and deploy them... ugh... **but wait!**, as that's were a CD pipeline comes into play!
+There is one caveat though. Every time you change anything, you have to rebuild your assets, and deploy them... ugh... **but wait!**, as that's where a CD pipeline comes into play!
 
 ## CD pipelines...?
 You've probably heard the terms CI/CD being thrown around, with CD sometimes referring to Continuous Delivery or Continuous Deployment. Arguments get quite long when debating about the PRECISE meaning of these words, as you can see in [this Stack Overflow](https://stackoverflow.com/questions/28608015/continuous-integration-vs-continuous-delivery-vs-continuous-deployment) question.
