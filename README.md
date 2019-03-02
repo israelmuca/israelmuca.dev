@@ -8,6 +8,7 @@
 - Netlify compilation on each commit, with automatic deployment to their CDN (once you finish all the steps).
 
 # Getting started
+Check out [this](https://israelmuca.dev/blog/jamstack-and-cd-pipelines-create-a-blog-with-nuxt-netlify-cms-and-netlify/) guide for a more thorough reading, or jump straight ahead for more concise instructions.
 
 ## What's needed
 - Github account
