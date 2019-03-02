@@ -13,7 +13,7 @@ description: >-
 keywords: >-
   vue.js jamstack netlify cms blog how-to tutorial guide nuxt.js netlifycms cd
   continuous development vue nuxt
-date: '2019-02-27T16:15:19-06:00'
+date: '2019-03-01T21:15:00-06:00'
 thumbnail: /images/uploads/john-barkiple-539580-unsplash-micro.jpeg
 ---
 ## The "old" ways
@@ -68,4 +68,77 @@ All in all, these are amazing tools that let us create blazing fast sites, in a 
 
 
 ## Getting started
-TBD
+For this, we'll only be needing:
+- Github account
+- Netlify account
+- Vue/Nuxt understanding
+
+## Fork the repo
+Using your Github account, go ahead and [click here](https://github.com/israelmuca/israelmuca.dev/fork) to fork the repo or just [clone it](https://github.com/israelmuca/israelmuca.dev).
+
+## Build Setup
+Install all the dependencies
+``` bash
+npm i
+```
+
+Now, you can run the code in development with:
+``` bash
+npm run dev
+```
+This will serve your page in `localhost:3000` with hot reload.
+
+Once you're ready to generate your static assets for production:
+``` bash
+npm run generate
+```
+This will create a `/dist` folder with the assets. This folder is not committed.  
+This is what Netlify will be building on their server, and then uploading the results to their CDN. *We don't need to do this manually ever.* We just do it for the sake of watching what happens inside Netlify.  
+
+## Configure your *new* repo  
+
+### Netlify CMS
+You'll need to define your fields and files for your content. I'm using defaults very similar to what you can see in [dev.to](https://dev.to). Mostly covering the title, description and keywords for SEO purposes, also a little summary of the post as well as a main image which is used both in the ArticleCard.vue and the Header.vue in the blog post page.  
+
+You can configure these fields in: `static/admin/config.yml`, and feel free to check the [Netlify CMS Documentation](https://www.netlifycms.org/docs/configuration-options/) for extra customization.  
+
+While your local server is running, you can access [localhost:3000/admin/](localhost:3000/admin/) to modify the content of your blog. You can also do it once it's deployed when you have the Netlify's address that's given to you.
+
+### Routes
+In here, both Nuxt and Nuxtdown work together to create the routes in the website.  
+  
+In the `pages` directory, you'll find an `index.vue` which is, as the name implies, the index of our site.  
+**This is handled by Nuxt**.  
+
+The `pages/blog/` directory will work as a directory in our site as well (israelmuca.dev/blog/... in my case), which will hold all the blog posts that are created using the `_blogpost.vue` template inside. It will be compiled once for each `.md` in the `content/blog/` directory. You can see how the content is fetched inside of that `.vue` file.  
+**This is handled by Nuxtdown**.
+
+You can configure Nuxtdown in: `nuxtdown.config.js`, and please go ahead and check the [Nuxtdown Documentation](https://github.com/joostdecock/nuxtdown-module/blob/master/README.md) to further understand what is happening or to change the functionality.
+
+### The rest of the site
+The rest of the site is a regular Vue + Nuxt app, I tried to comment the code where I think it's needed the most, and you can configure Nuxt in: `nuxt.config.js`, also, as usual, please check the [Vue.js](https://vuejs.org/v2/guide/) and [Nuxt.js](https://nuxtjs.org/guide/) documentation to further understand this code if you have any questions.
+
+
+## Congratulations
+By this point, you should have a fully functional Nuxt generated, Netlify hosted, blog site.
+
+## Issues
+If you have any problems implementing this, please don't hesitate and create a Github Issue or send me a [tweet](https://twitter.com/IsraelMuCa).
+
+## Thanks
+There's a phrase that I love and always try and remember:
+> _If I have seen further it is by standing in the shoulders of Giants_
+> - Isaac Newton
+
+Being true to that phrase, I have to acknowledge the many people that in one way or another contributed to this specific repo:
+- [Andrea Gomez - with her design](https://twitter.com/acgomezu)
+- [Vue.js](https://vuejs.org/)
+- [Nuxt.js](https://nuxtjs.org/)
+- [Netlify CMS](https://www.netlifycms.org/)
+- [Nuxtdown](https://www.npmjs.com/package/nuxtdown)
+- [Bulma](https://www.bulma.io)
+- [Prism](https://prismjs.com/)
+- [renestalder's template](https://github.com/renestalder/nuxt-netlify-cms-starter-template)
+- [Netlify](https://www.netlify.com/)
+
+Thanks again, and read ya'll soon!
