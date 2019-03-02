@@ -33,7 +33,7 @@ Once you're ready to generate your static assets for production:
 ``` bash
 npm run generate
 ```
-This will create a `/dist` folder with the assets. This folder is not commited.  
+This will create a `/dist` folder with the assets. This folder is not committed.  
 This is what Netlify will be building on their server, and then uploading the results to their CDN.
 
 ## Configure your repo  
@@ -42,18 +42,18 @@ This is what Netlify will be building on their server, and then uploading the re
 - Define your fields and files for your content.
 - Go to `static/admin/config.yml`.
 - Check the [Netlify CMS Documentation](https://www.netlifycms.org/docs/configuration-options/).
-- Also, while your local server is runing, you can access [localhost:3000/admin/](localhost:3000/admin/) to modify the content of your blog. You can also do it once it's deployed.
+- Also, while your local server is running, you can access [localhost:3000/admin/](localhost:3000/admin/) to modify the content of your blog. You can also do it once it's deployed.
 
 ### Routes
 - Nuxt will build every page inside of the `/pages` directory, but the `_blogpost.vue` is a special file, thats handled by *Nuxtdown*.
 - **In this case**:
   - **index.vue**: It's the `/` route, will be compiled once.
-  - **_blogpost.vue**: For each blog post, gets compiled once for each `.md` in the `content/blog/` folder.
+  - **_blogpost.vue**: For each blog post, gets compiled once for each `.md` in the `content/blog/` directory.
 - Configure Nuxtdown in: `nuxtdown.config.js`.
 - Check the [Nuxtdown Documentation](https://github.com/joostdecock/nuxtdown-module/blob/master/README.md).
 
 ### The rest of the site
-- It's a regular Vue/Nuxt app.
+- It's a regular Vue + Nuxt app.
 - The code is commented to try to assist anyone in modifying the views.
 - Configure Nuxt in: `nuxt.config.js`.
 - Check the [Vue.js](https://vuejs.org/v2/guide/) and [Nuxt.js](https://nuxtjs.org/guide/) documentation.
