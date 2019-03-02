@@ -58,7 +58,7 @@ export default {
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: this.post.thumbnail
+          content: this.imageURL
         }
       ]
     };
@@ -72,6 +72,12 @@ export default {
   // Once the component is mounted, we need to run Prism again to highlight the code blocks
   mounted() {
     Prism.highlightAll();
+  },
+  computed: {
+    // image will always return the correct URL for the thumbnail, both for development and once deployed
+    imageURL: function() {
+      return `${process.env.BASE_URL}${this.post.thumbnail}`
+    }
   }
 };
 </script>
