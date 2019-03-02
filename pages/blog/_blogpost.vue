@@ -107,7 +107,7 @@ export default {
     },
     // fullURL will always return the correct URL for the og:URL, both for development and once deployed
     fullURL: function() {
-      return `${process.env.BASE_URL}${this.$route.path}`;
+      return `${process.env.BASE_URL}${this.$route.path}/`;
     }
   }
 };
