@@ -2,7 +2,7 @@
   <footer class="footer" id="contact">
     <div class="container">
       <!-- First level -->
-      <nav class="level is-mobile">
+      <nav class="level is-mobile contact-me-level">
         <!-- Left side -->
         <div class="level-left">
           <div class="level-item">
@@ -94,8 +94,6 @@ footer {
 }
 
 .contact-me {
-  height: 64px;
-  width: 235px;
   color: #000000;
   font-family: "Eczar";
   font-weight: 500;
@@ -152,6 +150,25 @@ footer {
   .external-link {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  footer {
+    padding: 15px;
+  }
+
+  .contact-me-level {
+    margin-bottom: 0px;
+  }
+
+  .contact-me {
+    font-size: 34px;
+  }
+
+  .external-link {
+    padding-left: 7px;
+    padding-right: 7px;
   }
 }
 </style>
