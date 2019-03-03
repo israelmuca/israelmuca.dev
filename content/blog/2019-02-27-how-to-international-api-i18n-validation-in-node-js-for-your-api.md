@@ -98,7 +98,7 @@ Finally, let’s create the server.js file:
 touch server.js
 ```
 
-Let’s now get express going by modifying the ```server.js```
+Let’s now get express going by modifying the `server.js`
 
 ```javascript
 // Import dependencies
@@ -230,7 +230,7 @@ req.polyglot.extend(messages.en)
 next()
 }
 ```
-If you remember, our `server.js` uses the `createLocaleMiddleware` to set the current locale, which lives on ```req.locale.language```.
+If you remember, our `server.js` uses the `createLocaleMiddleware` to set the current locale, which lives on `req.locale.language`.
 
 So we get that value, and for our use case, check if it is _es_ for spanish or _en_ for english (our default in case it’s neither), and load the proper messages for the language, which are added to the Express’ ‘req’ object through polyglot’s _extend_ function.
 
@@ -394,7 +394,7 @@ return fromEntries(errArr)
 
 In this code, we’re receiving both the error Object created with `express-validator` (which we’ll extract from the `req` object with the `validationResult` function in a bit), and the Express’ `req` object.
 
-We’re creating an Array from the errObj, and then, for each entry, we’re taking the string we set as the error variable, and comparing it with the keys from the translation messages, changing the string in the `errArr` _(each "err[1].msg")_ to the actual phrase in polyglot in the desired language _(each "phrase")_.
+We’re creating an `Array` from the `errObj`, and then, for each entry, we’re taking the string we set as the error variable, and comparing it with the keys from the translation messages, changing the string in the `errArr` _(each "err[1].msg")_ to the actual phrase in polyglot in the desired language _(each "phrase")_.
 
 Finally, we use the imported `fromEntries` function, to convert the Array back into an Object and return it.
 
@@ -419,9 +419,33 @@ next()
 
 In this code we receive the regular `req, res, next` from Express, and we first verify if there were any errors using express-validator’s `validationResult`.
 Then, we check if there are errors, and if there are any, we return them with Express’ response.
-Check that return closely, as you can see, we send the results of the `translateMessages` function that is receiving the `validationErrors`, and the req object.
+Check that return closely, as you can see, we send the results of the `translateMessages` function that is receiving the `validationErrors`, and the `req` object.
 We also have an `else`, that when there are no validation errors, calls `next()` to continue to the next Express middleware.
 
+### Sending the errors
+So we're able to manage the errors by converting them from the string to their translated version, and packaging it in an object, ready to be sent back to the user if needed.  
+
+Now, we just need to use that file!  
+Let's go back to our `auth.routes.js` file and make use of this new function by importing it:
+```javascript
+import { procErr } from '../utilities/processErrors'
+```
+
+As I mentioned earlier, we built it as an Express Middleware, so we can just add it inside of our chain of events
+
+And then using it in the actual routes:
+```javascript
+// Routes =============================================================
+module.exports = router => {
+
+    // POST route to mock a login  endpoint
+    router.post("/api/login", validator('login'), procErr)
+
+    // POST route to mock a forgotten password endpoint
+    router.post("/api/forgot-password", validator('forgotPassword'), procErr)
+
+}
+```
 
 ### Moving past errors
 
@@ -450,6 +474,8 @@ exports.login = (req, res) => {
 // If no validation errors, get the req.body objects that were validated and are needed
 const { email, password } = req.body
 
+// Here, we would make use of that data, validating it against our database, creating a JWT token, etc...
+
 // Since all the validations passed, we send the loginSuccessful message, which would normally include a JWT or some other form of authorization
 return res.status(200).send({ auth: true, message: req.polyglot.t('loginSuccessful'), token: null })
 }
@@ -457,6 +483,8 @@ return res.status(200).send({ auth: true, message: req.polyglot.t('loginSuccessf
 exports.forgotPassword = (req, res) => {
 // If no validation errors, get the req.body objects that were validated and are needed
 const { email } = req.body
+
+// Here, we would make use of that data, validating it against our database, creating a JWT token, etc...
 
 // Since all the validations passed, we send the emailSent message
 return res.status(200).send({ auth: true, message: req.polyglot.t('emailSent') })
@@ -476,6 +504,7 @@ It should now look something like this:
 
 ```javascript
 import { validator } from '../validator/auth.validator'
+import { procErr } from '../utilities/processErrors'
 import { login,
 forgotPassword } from '../controller/auth.controller'
 
@@ -483,10 +512,10 @@ forgotPassword } from '../controller/auth.controller'
 module.exports = router => {
 
 // POST route to mock a login endpoint
-router.post("/api/login", validator('login'), login)
+router.post("/api/login", validator('login'), procErr, login)
 
 // POST route to mock a forgotten password endpoint
-router.post("/api/forgot-password", validator('forgotPassword'), forgotPassword)
+router.post("/api/forgot-password", validator('forgotPassword'), procErr, forgotPassword)
 
 
 }
@@ -497,3 +526,6 @@ These last functions respond with the success messages when everything is ok!
 
 So that's it!
 Now, Express responds properly whether your `headers` are set to `es_MX` or `en_US`. Both for error and success messages.
+
+### Testing
+
