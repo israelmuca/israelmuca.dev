@@ -23,6 +23,7 @@
     "core-js": "^2.6.5",
     "nuxt": "2.2.0",
     "nuxt-fontawesome": "^0.4.0",
+    "nuxt-webfontloader": "^1.0.0",
     "nuxtdown": "^2.0.3",
     "prismjs": "^1.15.0"
   },

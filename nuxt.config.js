@@ -3,6 +3,7 @@
 module.exports = {
   modules: [
     "nuxtdown",
+    "nuxt-webfontloader",
     ['nuxt-fontawesome', {
       component: 'fab',
       imports: [
@@ -23,6 +24,14 @@ module.exports = {
   env: {
     BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
   },
+  /* 
+  ** Lazy loading fonts for increased performance
+  */
+  webfontloader: {
+    google: {
+      families: ['Eczar:400,500', 'Work Sans:400,500']
+    }
+  },
   /*
   ** Headers for EVERY page
   */
@@ -36,7 +45,6 @@ module.exports = {
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Eczar:400,500|Work+Sans:400,500" }
     ],
   },
   /*
