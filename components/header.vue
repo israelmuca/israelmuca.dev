@@ -68,12 +68,12 @@
             </a>
             <a
               class="navbar-item"
-              href="https://www.twitter.com/IsraelMuCa"
+              href="https://angel.co/israelmuca"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Twitter"
+              aria-label="Angel List"
             >
-              <fab class="brand-icon" :icon="fab.faTwitter"/>
+              <fab class="brand-icon" :icon="fab.faAngellist"/>
             </a>
           </div>
         </div>

@@ -36,16 +36,16 @@
               <fab class="brand-icon" :icon="fab.faLinkedin"/>
             </a>
           </div>
-          <!-- Twitter -->
+          <!-- Angel List -->
           <div class="level-item">
             <a
-              href="https://www.twitter.com/IsraelMuCa"
+              class="navbar-item"
+              href="https://angel.co/israelmuca"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Twitter"
-              class="external-link"
+              aria-label="Angel List"
             >
-              <fab class="brand-icon" :icon="fab.faTwitter"/>
+              <fab class="brand-icon" :icon="fab.faAngellist"/>
             </a>
           </div>
         </div>
