@@ -16,9 +16,9 @@ keywords: >-
 date: '2019-03-04T01:30:00-06:00'
 thumbnail: /images/uploads/kevin-walker-751074-unsplash-tiny.jpg
 ---
-So a while back, I was working on an API for a customer who had an [i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization) requirement. Alongside other requests, they needed their API to validate incoming user data, and depending on that data, return the specific success or error messages in the user’s provided language.  
+Recently, I was working on a project that has an [i18n](https://en.wikipedia.org/wiki/Internationalization_and_localization) requirement. I needed the API to validate incoming user data, and depending on that data, return the specific success or error messages in the user’s provided language.  
 
-Regarding the actual translations, the customer wanted to easily provide the backend with the messages in both languages (Spanish and English to begin with), and they wanted to be able to eventually support more languages, being able to modify them “on the go” without requiring help from a developer.  
+Regarding the actual translations, I wanted to easily provide the backend with the messages in both languages (Spanish and English to begin with), and I wanted to be able to eventually support more languages, being able to hire a translator if needed, and having him modify them “on the go” without requiring help from a developer.  
 
 So I started researching how to fulfill those requirements, and I ran into some hiccups along the way, thus, I thought it’d be nice to create a tutorial with my proposed (and implemented) solution.  
 
