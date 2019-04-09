@@ -39,11 +39,11 @@
           <!-- Angel List -->
           <div class="level-item">
             <a
-              class="navbar-item"
               href="https://angel.co/israelmuca"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Angel List"
+              class="external-link"
             >
               <fab class="brand-icon" :icon="fab.faAngellist"/>
             </a>

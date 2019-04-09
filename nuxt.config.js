@@ -9,7 +9,7 @@ module.exports = {
       imports: [
         {
           set: '@fortawesome/free-brands-svg-icons',
-          icons: ['faGithub', 'faTwitter', 'faLinkedin']
+          icons: ['faGithub', 'faAngellist', 'faLinkedin']
         },
         {
           set: '@fortawesome/free-solid-svg-icons',

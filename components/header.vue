@@ -20,12 +20,12 @@
           </div>
           <div class="navbar-menu" :class="{ 'is-active': showNav }">
             <div class="navbar-end">
-              <nuxt-link to="/#blog" class="navbar-item is-clearfix">
+              <!-- <nuxt-link to="/#blog" class="navbar-item is-clearfix">
                 <span class="header-link is-pulled-right">BLOG</span>
-              </nuxt-link>
-              <a href="#" class="navbar-item is-clearfix">
+              </nuxt-link> -->
+              <!-- <a href="#" class="navbar-item is-clearfix">
                 <span class="header-link is-pulled-right">ABOUT</span>
-              </a>
+              </a> -->
               <a href="#contact" class="navbar-item is-clearfix">
                 <span class="header-link is-pulled-right">CONTACT</span>
               </a>
