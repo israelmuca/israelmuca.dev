@@ -73,7 +73,7 @@ If you run `npm run dev` and you like what you see, you're ready to deploy to Ne
 Now, with every commit you do, Netlify will compile your site with `npm run generate` and deploy it on their CDN.
 
 ## Issues
-If you have any problems implementing this, please don't hesitate and create a Github Issue or send me a [tweet](https://twitter.com/IsraelMuCa).
+If you have any problems implementing this, please don't hesitate and [create a Github Issue](https://github.com/israelmuca/israelmuca.dev/issues/new) or send me a [tweet](https://twitter.com/IsraelMuCa).
 
 ## Built with
 - [Andrea Gomez' design](https://twitter.com/acgomezu)
