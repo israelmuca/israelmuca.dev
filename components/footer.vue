@@ -56,7 +56,7 @@
         <!-- Left side -->
         <div class="level-left">
           <div class="level-item">
-            <span class="email">isra.munoz@gmail.com</span>
+            <span class="email">email@israelmuca.dev</span>
           </div>
         </div>
         <!-- Right side -->
