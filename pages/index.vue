@@ -3,7 +3,7 @@
     <Header>
       <h1
         class="title"
-      >Hello! I'm Israel Muñoz, a Full Stack Web Developer. I'm currently working in expanding access to computer science in mexican schools.</h1>
+      >Hi! I'm Israel Muñoz, a Full Stack Web Developer. I'm currently working in expanding access to computer science in mexican schools.</h1>
     </Header>
     <div class="container" id="blog">
       <div class="columns">
@@ -31,7 +31,7 @@ export default {
   // The head function generates all the metadata for the HTML's head
   head() {
     return {
-      title: "Israel Muñoz",
+      title: "Hi! I'm Israel Muñoz",
       meta: [
         // SEO meta
         {
