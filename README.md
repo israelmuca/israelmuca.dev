@@ -1,4 +1,5 @@
-# My personal webpage with blog | [![Netlify Status](https://api.netlify.com/api/v1/badges/08d286ac-4549-4511-8d6d-2dc59e21b79a/deploy-status)](https://app.netlify.com/sites/israelmuca/deploys)  
+# My personal webpage with blog
+[![Netlify Status](https://api.netlify.com/api/v1/badges/08d286ac-4549-4511-8d6d-2dc59e21b79a/deploy-status)](https://app.netlify.com/sites/israelmuca/deploys)  
 > A Nuxt.js static website with a blog
 
 ## Features
@@ -72,7 +73,7 @@ If you run `npm run dev` and you like what you see, you're ready to deploy to Ne
 Now, with every commit you do, Netlify will compile your site with `npm run generate` and deploy it on their CDN.
 
 ## Issues
-If you have any problems implementing this, please don't hesitate and create a Github Issue or send me a [tweet](https://twitter.com/IsraelMuCa).
+If you have any problems implementing this, please don't hesitate and [create a Github Issue](https://github.com/israelmuca/israelmuca.dev/issues/new) or send me a [tweet](https://twitter.com/IsraelMuCa).
 
 ## Built with
 - [Andrea Gomez' design](https://twitter.com/acgomezu)
