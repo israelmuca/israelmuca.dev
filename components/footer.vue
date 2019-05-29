@@ -48,6 +48,18 @@
               <fab class="brand-icon" :icon="fab.faAngellist"/>
             </a>
           </div>
+          <!-- Resume -->
+          <!-- <div class="level-item">
+            <a
+              href="https://drive.google.com/open?id=1s2Ds6PPm1qlQikcF7ZFXajCNFhwKdJoj"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Resume"
+              class="external-link"
+            >
+              <img class="brand-icon-svg" src="/ext-icon/resume.svg" alt="resume icon">
+            </a>
+          </div> -->
         </div>
       </nav>
 
@@ -72,19 +84,19 @@
 </template>
 
 <script>
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons"
+import { fas } from "@fortawesome/free-solid-svg-icons"
 
 export default {
   computed: {
     fab() {
-      return fab;
+      return fab
     },
     fas() {
-      return fas;
+      return fas
     }
   }
-};
+}
 </script>
 
 <style scoped>
@@ -110,6 +122,15 @@ footer {
 .brand-icon:hover {
   color: #3273dc;
 }
+
+/* .brand-icon-svg {
+  height: 2em;
+  width: 2em;
+  fill: #4a4a4a;
+}
+.brand-icon-svg:hover {
+  fill: #3273dc;
+} */
 
 .arrow-icon {
   height: 1.5em;
